@@ -21,20 +21,12 @@ charset "utf-8";
 	background-color: #FDFDFD;
 }
 
-
 .main {
-	display: inline-block;
-	vertical-align: middle;
-    width: 55rem;
-    max-width: 90%;
-    font-size: 25px;
     text-align: center;
-    letter-spacing: 2px;
-    text-shadow: rgba(0, 0, 0, 0.25) 0 0 5px;
 }
 
 .main .inner {
-    background-image: url(image/haoye.jfif);
+    background-image: url(https://github.com/kancheng/kancheng.github.io/blob/master/image/haoye.jfif?raw=true);
     background-size: cover;
     background-position: center center;
     height: 100%;
