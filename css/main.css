@@ -21,24 +21,10 @@ charset "utf-8";
 	background-color: #FDFDFD;
 }
 
-.main {
-    text-align: center;
+.haoye-pic img {
+  max-width: 60%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 0.2rem #ffffff;
+          box-shadow: 0 0 0 0.2rem #ffffff;
 }
 
-.main .inner {
-    background-image: url(https://github.com/kancheng/kancheng.github.io/blob/master/image/haoye.jfif?raw=true);
-    background-size: cover;
-    background-position: center center;
-    height: 100%;
-    border-radius: 50%;
-}
-
-.main .circle {
-    display: inline-block;
-    width: 20vw;
-    height:20vw;
-    border-radius: 50%;
-    border: 1px solid #eee;
-    padding: 5px;
-    background: #fff;
-}
