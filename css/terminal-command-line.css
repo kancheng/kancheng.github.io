@@ -1,0 +1,96 @@
+﻿.console {
+	background-color: #302727;
+	font-family: Monaco, Menlo, 'Ubuntu Mono', Consolas, source-code-pro, monospace;
+	font-size: 2vmin;
+	color: #09EF28;
+	width: 50vw;
+	height: 20vh;
+	padding: 1vmin 1vmin;
+	-ms-word-break: break-all;
+	word-break: keep-all;
+}
+.console p {
+	white-space: pre-line;
+	margin: 0;
+}
+.keyin {
+	background-color: inherit;
+	border: 0;
+	color: transparent;
+	text-shadow: 0 0 0 #09EF28;
+	font: inherit;
+	width: 0;
+}
+.keyin:focus {
+	outline: none;
+}
+.pointer {
+	background-color: #09EF28;
+	-moz-animation: flash 1s infinite;
+	-o-animation: flash 1s infinite;
+	-webkit-animation: flash 1s infinite;
+	animation: flash 1s infinite;
+}
+.pointer:after {
+	content: '_';
+}
+@-moz-keyframes flash {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
