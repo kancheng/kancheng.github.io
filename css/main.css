@@ -17,7 +17,7 @@ charset "utf-8";
 	border-radius: 4px;
 }
 
-.bg-color {
+body {
 	background-color: #FDFDFD;
 }
 
@@ -28,14 +28,55 @@ charset "utf-8";
 .haoye-pic {
 	width: auto;
 	height: auto;
-    max-width: 40vw;
-    max-height: 40vh;
+	max-width: 40vw;
+	max-height: 40vh;
 }
 
-@media screen and (max-width: 600px) {
-    
+.more-icon {
+	width: auto;
+	height: auto;
+	max-width: 5vw;
+	max-height: 5vh;
+}
+
+.book-icon {
+	width: auto;
+	height: auto;
+	max-width: 8vw;
+	max-height: 8vh;
+}
+
+.github-icon {
+	width: auto;
+	height: auto;
+	max-width: 8vw;
+	max-height: 8vh;
+}
+
+@media screen and (max-width: 3000px) { 
+	.minscrshow{
+		visibility: hidden;
+	}
+}
+
+@media screen and (max-width: 2000px) { 
+	.minscrshow{
+		visibility: hidden;
+	}
+}
+
+@media screen and (max-width: 1000px) { 
+	.minscrshow{
+		visibility: hidden;
+	}
+}
+
+@media screen and (max-width: 600px) { 
 	.minscrfont{
 		display:none;
+	}
+	.minscrshow{
+		visibility: visible;
 	}
 }
 
