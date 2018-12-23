@@ -13,84 +13,55 @@
 	white-space: pre-line;
 	margin: 0;
 }
-.keyin {
-	background-color: inherit;
-	border: 0;
-	color: transparent;
-	text-shadow: 0 0 0 #09EF28;
-	font: inherit;
-	width: 0;
+.main {
+	color: #666;
+	margin-top: 50px;
 }
-.keyin:focus {
-	outline: none;
-}
-.pointer {
-	background-color: #09EF28;
-	-moz-animation: flash 1s infinite;
-	-o-animation: flash 1s infinite;
-	-webkit-animation: flash 1s infinite;
-	animation: flash 1s infinite;
-}
-.pointer:after {
-	content: '_';
-}
-@-moz-keyframes flash {
+@keyframes blink {
 	0% {
-		opacity: 0;
-	}
-	20% {
 		opacity: 1;
-	}
-	40% {
-		opacity: 1;
-	}
-	60% {
-		opacity: 1;
-	}
-	80% {
-		opacity: 0;
 	}
 	100% {
 		opacity: 0;
 	}
 }
-@-webkit-keyframes flash {
+@-webkit-keyframes blink {
 	0% {
-		opacity: 0;
-	}
-	20% {
 		opacity: 1;
-	}
-	40% {
-		opacity: 1;
-	}
-	60% {
-		opacity: 1;
-	}
-	80% {
-		opacity: 0;
 	}
 	100% {
 		opacity: 0;
 	}
 }
-@keyframes flash {
+@-moz-keyframes blink {
 	0% {
-		opacity: 0;
-	}
-	20% {
 		opacity: 1;
-	}
-	40% {
-		opacity: 1;
-	}
-	60% {
-		opacity: 1;
-	}
-	80% {
-		opacity: 0;
 	}
 	100% {
 		opacity: 0;
 	}
+}
+@-ms-keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-o-keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.blink {
+	color: #09EF28;
+	animation: blink 1s linear infinite;
+	-webkit-animation: blink 1s linear infinite;
+	-moz-animation: blink 1s linear infinite;
+	-ms-animation: blink 1s linear infinite;
+	-o-animation: blink 1s linear infinite;
 }
