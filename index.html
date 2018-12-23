@@ -11,14 +11,25 @@
 		<link rel = "stylesheet" type = "text/css" href = "css/terminal-command-line.css">
 		<script src="js/terminal-command-line.js"></script>
 		<link rel="shortcut icon" href="favicon.ico"/>
+		<script type="text/javascript">
+			$(function () {
+				$(‘a[href*=#]:not([href=#])’).click(function() {
+					var target = $(this.hash);
+					$(‘html,body’).animate({
+						scrollTop: target.offset().top
+					}, 1000);
+					return false;
+				});
+			});
+	  </script>
 
 	</head>
 	<body>
 	<div class="container-fluid">
-		<section class="header-nav" id="pagehead">
+		<section class="header-nav" id="Home">
 			<div class="pos-f-t">
 				<nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
-					<a class="navbar-brand" href="#pagehead"><h4 class="text-white">Horst Kan</h4></a>
+					<a class="navbar-brand" href="#Home"><h4 class="text-white">Horst Kan</h4></a>
 					<button 
 						class="navbar-toggler" 
 						type="button" 
@@ -133,29 +144,26 @@
 						<br /><br /><br />
 						<ul class="timeline">
 							<li>
-								<a target="_blank" href="https://kancheng.github.io/#">LHU</a>
-								<a href="#" class="float-right">21 March, 2018</a>
-								<p>Hi ....</p>
+								<a target="_blank" href="https://kancheng.github.io/#Home">LHUM</a>
+								<a href="#Home" class="float-right">21 March, 2018</a>
+								<p>Hi ....，將自己的技術能力與進行完善</p>
 							</li>
 							<li>
-								<a href="#">LHU</a>
-								<a href="#" class="float-right">4 March, 2012</a>
-								<p>Hi ...</p>
+								<a href="#Home">LHU</a>
+								<a href="#Home" class="float-right">4 March, 2012</a>
+								<p>Hi ...，大學時期多個領域的摸索嘗試。</p>
 							</li>
 							<li>
-								<a href="#">FXSH</a>
-								<a href="#" class="float-right">1 April, 2010</a>
-								<p>Hi ...</p>
+								<a href="#Home">FXSH</a>
+								<a href="#Home" class="float-right">1 April, 2010</a>
+								<p>Hi ...，國中和高中時期培養自己對未來的興趣。</p>
 							</li>
 						</ul>
 					</div>
 				</div>
 				<br />
-				<hr />
 			</div>
 		</section>
-
-
 		<section class="experience" id="experience">
 			<!-- Main jumbotron for a primary marketing message or call to action -->
 			<div class="jumbotron">
@@ -232,7 +240,7 @@
 		</section>
 
 		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-		<a class="navbar-brand" href="#pagehead">Back</a>
+		<a class="navbar-brand" href="#Home">Top</a>
 		</nav>
 	</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
