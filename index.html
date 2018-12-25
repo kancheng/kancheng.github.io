@@ -8,10 +8,21 @@
 		<title>Haoye</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link rel = "stylesheet" type = "text/css" href = "css/main.css">
+
 		<link rel = "stylesheet" type = "text/css" href = "css/terminal-command-line.css">
+
+		<!-- Google fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+		<!-- D3.js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+
 
 		<link rel="shortcut icon" href="favicon.ico"/>
 		<script src="js/typeitjs.js"></script>
+
+		<link rel = "stylesheet" type = "text/css" href = "css/rd-chart-d3js.css">
 	</head>
 	<body>
 	<div class="container-fluid">
@@ -226,7 +237,7 @@
 		</section>
 
 
-	<div class="jumbotron-fluid">
+	<div class="jumbotron-fluid" >
 		<div class="jumbotron main-dk">
 			<section class="skills" id="skills">
 				<div class="container">
@@ -363,14 +374,21 @@
 							</div>
 							<p>XXX</p>
 						</div>
+
 					</div>
+					<br />
 				</div>
 			</section>
 			<hr />
 		</div>
 	</div>
 
+	<div id="rcd3"><div class="radarChart"></div></div>
 
+
+	<script src="js/radarChart.js"></script>
+	<script src="js/rd-chart-d3.js"></script>
+	
 
 		<section class="project" id="project">
 			<div class="container">
