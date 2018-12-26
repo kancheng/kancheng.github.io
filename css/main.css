@@ -184,7 +184,7 @@ ul.timeline > li:before {
 
 @media screen and (max-width: 750px) { 
 	.main-dk{
-		max-height: 130vh;
+		max-height: 200vh;
 	}
 
 }
