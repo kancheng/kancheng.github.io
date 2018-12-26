@@ -97,7 +97,7 @@ function RadarChart(id, data, options) {
 	   .attr("x", 4)
 	   .attr("y", function(d){return -d*radius/cfg.levels;})
 	   .attr("dy", "0.4em")
-	   .style("font-size", "10px")
+	   .style("font-size", "2vmin")
 	   .attr("fill", "#737373")
 	   .text(function(d,i) { return Format(maxValue * d/cfg.levels); });
 
@@ -118,13 +118,15 @@ function RadarChart(id, data, options) {
 		.attr("x2", function(d, i){ return rScale(maxValue*1.1) * Math.cos(angleSlice*i - Math.PI/2); })
 		.attr("y2", function(d, i){ return rScale(maxValue*1.1) * Math.sin(angleSlice*i - Math.PI/2); })
 		.attr("class", "line")
-		.style("stroke", "white")
+		.style("stroke", "#808080")
+		//.style("stroke", "white")
 		.style("stroke-width", "2px");
 
 	//Append the labels at each axis
 	axis.append("text")
 		.attr("class", "legend")
-		.style("font-size", "11px")
+		.style("font-size", "2vmin")
+		// .style("font-size", "11px")
 		.attr("text-anchor", "middle")
 		.attr("dy", "0.35em")
 		.attr("x", function(d, i){ return rScale(maxValue * cfg.labelFactor) * Math.cos(angleSlice*i - Math.PI/2); })
