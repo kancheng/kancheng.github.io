@@ -6,6 +6,11 @@ charset "utf-8";
 	width: 120px;
 }
 
+@font-face {
+  font-family: NotoSansCJKtc-Thin;
+  src: url(fonts/NotoSansCJKtc-Thin.ttf);
+}
+
 .btn-text {
 	width: 120px;
 	padding: 6px 12px;
@@ -17,8 +22,10 @@ charset "utf-8";
 	border-radius: 4px;
 }
 
+
 body {
 	background-color: #FDFDFD;
+	font-family:  'Helvetica', 'Arila', 'sans-serif', 'Microsoft JhengHei';
 }
 
 .main {

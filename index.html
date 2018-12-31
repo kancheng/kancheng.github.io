@@ -23,13 +23,50 @@
 		<script src="js/typeitjs.js"></script>
 
 		<link rel = "stylesheet" type = "text/css" href = "css/rd-chart-d3js.css">
+		<script src="js/languageData.js" type="text/javascript"></script>
+		<script>
+			function chg_lan(lan_index) 
+			{ 
+				var myLangArray; 
+
+				switch(lan_index) 
+				{ 
+				/* languageData.js */
+				case 1: 
+				myLangArray = L_taiwan; 
+				break; 
+				case 2: 
+				myLangArray = L_china; 
+				break; 
+
+				default :
+				/* Taiwan */
+				myLangArray = L_english; 
+				break; 
+
+				}
+				/* 將各個文字, 填入指定位置 */
+				document.getElementById('Lan0').innerHTML = myLangArray[0];
+				document.getElementById('Lan1').innerHTML = myLangArray[1];
+				document.getElementById('Lan2').innerHTML = myLangArray[2];
+				document.getElementById('Lan3').innerHTML = myLangArray[3];
+				document.getElementById('Lan4').innerHTML = myLangArray[4];
+				document.getElementById('Lan5').innerHTML = myLangArray[5];
+				document.getElementById('Lan6').innerHTML = myLangArray[6];
+				document.getElementById('Lan7').innerHTML = myLangArray[7];
+				document.getElementById('Lan8').innerHTML = myLangArray[8];
+				document.getElementById('Lan9').innerHTML = myLangArray[9];
+				document.getElementById('Lan10').innerHTML = myLangArray[10];
+				document.getElementById('Lan11').innerHTML = myLangArray[11];
+			}
+	</script>
 	</head>
 	<body>
 	<div class="container-fluid">
 		<section class="header-nav" id="Home">
 			<div class="pos-f-t">
 				<nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
-					<a class="navbar-brand" href="#Home"><h4 class="text-white">Horst Kan</h4></a>
+					<a class="navbar-brand" href="#Home"><h4 id = "Lan0" class="text-white">Horst Kan</h4></a>
 					<button 
 						class="navbar-toggler" 
 						type="button" 
@@ -43,16 +80,24 @@
 					<div class="collapse navbar-collapse" id="navbarText">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item">
-							<a class="nav-link" href="#education">Education</a>
+							<a id = "Lan1" class="nav-link" href="#education">Education</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#experience">Experience</a>
+							<a id = "Lan2" class="nav-link" href="#experience">Experience</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#skills">Skills</a>
+							<a id = "Lan3" class="nav-link" href="#skills">Skills</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#project">Project</a>
+							<a id = "Lan4" class="nav-link" href="#project">Project</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a id = "Lan5" class="nav-link dropdown-toggle" href="#" id="dropdownLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown04">
+								<a id = "Lan6" onclick="chg_lan(0)" class="dropdown-item" href="#">English</a>
+								<a id = "Lan7" onclick="chg_lan(1)" class="dropdown-item" href="#">Traditional Chinese</a>
+								<a id = "Lan8" onclick="chg_lan(2)" class="dropdown-item" href="#">Simplified Chinese</a>
+							</div>
 						</li>
 					</ul>
 					</div>
@@ -76,7 +121,7 @@
 					<br />
 					<div class = "row">
 						<div class="col-12">
-							<span style=" font-size: 8vmin" class="display-3">
+							<span id = "Lan9" style=" font-size: 8vmin" class="display-3">
 								Horst Kan
 							</span><br />
 							<span class="minscrfont" style="font-size: 3vmin">
@@ -103,12 +148,12 @@
 												<span aria-hidden="true">&times;</span>
 											</button>
 										</div>
-										<div class="modal-body">
-											Coding, R, Python, PHP and JavaScript are my passions. <br/>
-											They are hoped to be my job in the future. <br/>
-											Graduated from the Department of Information Management,<br/> 
-											Lunghwa University of Science and Technolog.<br/>
-											I intend to be a Data Analyst and Web Developer.<br/><br/>
+										<div id = "Lan10" class="modal-body">
+											Coding, R, Python, PHP and JavaScript are my passions. <br />
+											They are hoped to be my job in the future. <br />
+											Graduated from the Department of Information Management,<br /> 
+											Lunghwa University of Science and Technolog.<br />
+											I intend to be a Data Analyst and Web Developer.<br /><br />
 										</div>
 										<div class="modal-footer ">
 											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -120,11 +165,11 @@
 						<div class="col-12">
 							<div class="minscrfont" style="font-size: 2vmin;height: 25vh;">
 								<div class="head">
-									<span class="type">
-									Coding, R, Python, PHP and JavaScript are my passions.<br>
-									They are hoped to be my job in the future.<br>
-									Graduated from the Department of Information Management,<br>
-									Lunghwa University of Science and Technolog.<br>
+									<span id = "Lan11" class="type">
+									Coding, R, Python, PHP and JavaScript are my passions.<br />
+									They are hoped to be my job in the future.<br />
+									Graduated from the Department of Information Management,<br />
+									Lunghwa University of Science and Technolog.<br />
 									I intend to be a Data Analyst and Web Developer.</span>
 								</div>
 							</div>
@@ -420,7 +465,7 @@
 				<div class="row">
 					<div class="col" style="text-align: center;">
 						<img
-							style = "width: 50vw; height: 50vh;"
+							style = "width: 50vw; height: auto;"
 							src="image/proj/proj1/pj-1-1.PNG"
 						/>
 						<br />
@@ -447,8 +492,10 @@
 		<a class="navbar-brand" href="#Home">Top</a>
 		</nav>
 
-		 <script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 
-
+	<script type="text/javascript">
+			chg_lan(0); 
+	</script>
 	</body>
 </html>
