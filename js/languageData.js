@@ -17,6 +17,10 @@ L_english[9] = "Horst Kan";
 L_english[10] = "Coding, R, Python, PHP and JavaScript are my passions. <br/>They are hoped to be my job in the future. <br/>Graduated from the Department of Information Management,<br/> Lunghwa University of Science and Technolog.<br/>I intend to be a Data Analyst and Web Developer.<br/><br/>";
 L_english[11] = "Coding, R, Python, PHP and JavaScript are my passions. <br/>They are hoped to be my job in the future. <br/>Graduated from the Department of Information Management,<br/> Lunghwa University of Science and Technolog.<br/>I intend to be a Data Analyst and Web Developer.<br/>";
 
+L_english[12] = "Education";
+L_english[13] = "Experience";
+L_english[14] = "Skills";
+L_english[15] = "Project";
 
 
 /* Traditional Chinese - Taiwan */
@@ -35,6 +39,11 @@ L_taiwan[9] = "干皓丞";
 L_taiwan[10] = "畢業於龍華科技大學資訊管理研究所，<br />目前主要語言為 R 、 Python 、 PHP 和 JS，<br />未來會繼續作為工作來努力，<br />期望自己將來成為優異的資料分析師與 Web 開發者。<br /><br />";
 L_taiwan[11] = "畢業於龍華科技大學資訊管理研究所，<br />目前主要語言為 R 、 Python 、 PHP 和 JS，<br />未來會繼續作為工作來努力，<br />期望自己將來成為優異的資料分析師與 Web 開發者。<br />";
 
+L_taiwan[12] = "學歷";
+L_taiwan[13] = "經歷";
+L_taiwan[14] = "技能";
+L_taiwan[15] = "專案";
+
 
 /* Simplified Chinese */
 L_china = new Array();
@@ -51,3 +60,12 @@ L_china[8] = "简体中文";
 L_china[9] = "干皓丞"; 
 L_china[10] = "毕业于龙华科技大学资讯管理研究所，<br />目前主要语言为R 、 Python 、 PHP 和JS，<br />未来会继续作为工作来努力，<br />期望自己将来成为优异的资料分析师与Web 开发者。 <br /><br />";
 L_china[11] = "毕业于龙华科技大学资讯管理研究所，<br />目前主要语言为R 、 Python 、 PHP 和JS，<br />未来会继续作为工作来努力，<br />期望自己将来成为优异的资料分析师与Web 开发者。 <br />";
+
+L_china[12] = "学历";
+L_china[13] = "经历";
+L_china[14] = "技能";
+L_china[15] = "专案";
+
+
+
+
