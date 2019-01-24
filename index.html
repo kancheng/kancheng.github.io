@@ -6,6 +6,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<title>Haoye</title>
+
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link rel = "stylesheet" type = "text/css" href = "css/main.css">
 		<link rel = "stylesheet" type = "text/css" href = "css/terminal-command-line.css">
@@ -499,9 +500,17 @@
 					<div class="col">
 						<div class="card">
 							<div class="card-body">
-								This research had constructed an interactive system of academic achievement analysis (A3S) with R Shiny technique which includes easy used functions of data preparation, data demographics, clustering analysis validation, analysis of variances and data visualization for teachers. This study also had completed the works of data understanding, data managing and data defining for eight-year scores data of compulsory subjects of all departments in the Business School based on the standard process for big data analysis. Finally, a case study on the academic achievements of the students enrolled in 2009 of the Department of Information Management was demonstrated for the system advantage.
+								<button id="prj-summary-1" class="btn btn-info" type="button">Click</button>
+								<br /><br />
+								<div id = "prj-1-show">
+
+									&emsp;&emsp;This research had constructed an interactive system of academic achievement analysis (A3S) with R Shiny technique which includes easy used functions of data preparation, data demographics, clustering analysis validation, analysis of variances and data visualization for teachers. This study also had completed the works of data understanding, data managing and data defining for eight-year scores data of compulsory subjects of all departments in the Business School based on the standard process for big data analysis. Finally, a case study on the academic achievements of the students enrolled in 2009 of the Department of Information Management was demonstrated for the system advantage.
+								</div>
 								<br />
-								The A3S system lets the users determine the parameters of cluster analysis by choosing the necessary subjects. When dividing the subjects into three categories: measurement, management and profession, choosing the subjects of calculation, economic and programming design as three indicators of academic achievements of the freshmen and using the condition of applying student loans as economic indicator, the case study of the Department of Information Management has found that the cluster analysis can forecast the performance of senior courses. Therefore, this system will aim at choosing their own useful subjects as effective indicators of cluster analysis for each department, help the teachers to discover the learning performance of students, to design the appropriate teaching facilities, teaching goals and methods, and to meet the requirements of students’ academic achievements.
+								<div id = "prj-hide-1">
+									&emsp;&emsp;The A3S system lets the users determine the parameters of cluster analysis by choosing the necessary subjects. When dividing the subjects into three categories: measurement, management and profession, choosing the subjects of calculation, economic and programming design as three indicators of academic achievements of the freshmen and using the condition of applying student loans as economic indicator, the case study of the Department of Information Management has found that the cluster analysis can forecast the performance of senior courses. Therefore, this system will aim at choosing their own useful subjects as effective indicators of cluster analysis for each department, help the teachers to discover the learning performance of students, to design the appropriate teaching facilities, teaching goals and methods, and to meet the requirements of students’ academic achievements.
+								</div>
+
   							</div>
 						</div>
 					</div>
@@ -540,6 +549,13 @@
 				} /* End if */
 			});
 		}); 
+
+
+		$(document).ready(function() {
+			$("#prj-summary-1").click(function() {
+				$("#prj-hide-1").toggle();
+			});
+		});
 	</script>
 	</body>
 </html>
