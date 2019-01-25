@@ -68,11 +68,18 @@
 				document.getElementById('Lan14').innerHTML = myLangArray[14];
 				document.getElementById('Lan15').innerHTML = myLangArray[15];
 
+				/* Project */
+				document.getElementById('prj-1-txt-show').innerHTML = myLangArray[16];
+				document.getElementById('prj-1-txt-hide').innerHTML = myLangArray[17];
+
 			}
 	</script>
+
+		<!-- Font Awesome -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
 			integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" 
 			crossorigin="anonymous">
+
 	</head>
 	<body>
 	<div class="container-fluid">
@@ -504,10 +511,10 @@
 						<div class="card">
 							<div class="card-body">
 								<div>
-									<button id="prj-summary-1" class="btn btn-outline-info" type="button">
+									<button id="prj-summary-1" class="btn btn-outline-info" type="button" onclick="showProject_1();">
 										<i class="fa fa-project-diagram"></i>
 										Abstract
-										<i class="fa fa-chevron-circle-down"></i>
+										<i id = "prj-summary-1-btn-down" class="fa fa-chevron-circle-down"></i>
 									</button>
 									&emsp;
 									<button class="btn btn-outline-primary" type="button" onclick = "self.location.href='https://github.com/kancheng/rsloan'" >
@@ -515,14 +522,26 @@
 										Project
 									</button>
 								</div>
-								<br /><br />
+								<br />
+								<hr />
+								<br />
 								<div id = "prj-1-show">
 
-									&emsp;&emsp;This research had constructed an interactive system of academic achievement analysis (A3S) with R Shiny technique which includes easy used functions of data preparation, data demographics, clustering analysis validation, analysis of variances and data visualization for teachers. This study also had completed the works of data understanding, data managing and data defining for eight-year scores data of compulsory subjects of all departments in the Business School based on the standard process for big data analysis. Finally, a case study on the academic achievements of the students enrolled in 2009 of the Department of Information Management was demonstrated for the system advantage.
+									&emsp;&emsp;
+									<span id = "prj-1-txt-show">
+										This research had constructed an interactive system of academic achievement analysis (A3S) with R Shiny technique which includes easy used functions of data preparation, data demographics, clustering analysis validation, analysis of variances and data visualization for teachers. This study also had completed the works of data understanding, data managing and data defining for eight-year scores data of compulsory subjects of all departments in the Business School based on the standard process for big data analysis. Finally, a case study on the academic achievements of the students enrolled in 2009 of the Department of Information Management was demonstrated for the system advantage.
+									</span>
 								</div>
 								<br />
-								<div id = "prj-hide-1">
-									&emsp;&emsp;The A3S system lets the users determine the parameters of cluster analysis by choosing the necessary subjects. When dividing the subjects into three categories: measurement, management and profession, choosing the subjects of calculation, economic and programming design as three indicators of academic achievements of the freshmen and using the condition of applying student loans as economic indicator, the case study of the Department of Information Management has found that the cluster analysis can forecast the performance of senior courses. Therefore, this system will aim at choosing their own useful subjects as effective indicators of cluster analysis for each department, help the teachers to discover the learning performance of students, to design the appropriate teaching facilities, teaching goals and methods, and to meet the requirements of students’ academic achievements.
+								<div id="prj-1-txt-more">
+									<h3  style="text-align:center; color: #8C8C8C; display:block;"> . . . </h3>
+								</div>
+								<div id = "prj-hide-1" style="display:none;">
+									&emsp;&emsp;
+
+									<span id = "prj-1-txt-hide">
+										The A3S system lets the users determine the parameters of cluster analysis by choosing the necessary subjects. When dividing the subjects into three categories: measurement, management and profession, choosing the subjects of calculation, economic and programming design as three indicators of academic achievements of the freshmen and using the condition of applying student loans as economic indicator, the case study of the Department of Information Management has found that the cluster analysis can forecast the performance of senior courses. Therefore, this system will aim at choosing their own useful subjects as effective indicators of cluster analysis for each department, help the teachers to discover the learning performance of students, to design the appropriate teaching facilities, teaching goals and methods, and to meet the requirements of students’ academic achievements.
+									</span>
 								</div>
 
   							</div>
@@ -564,12 +583,21 @@
 			});
 		}); 
 
+		function showProject_1(id) {
+			var show1 = document.getElementById('prj-1-txt-more');
+			var show2 = document.getElementById('prj-hide-1');
+			var show3 = document.getElementById('prj-summary-1-btn-down');
 
-		$(document).ready(function() {
-			$("#prj-summary-1").click(function() {
-				$("#prj-hide-1").toggle();
-			});
-		});
+			if (show1.style.display != 'none' || show2.style.display != 'block') {
+				show3.className = "fa fa-chevron-circle-up";
+				show1.style.display = 'none';
+				show2.style.display = 'block'
+			} else {
+				show3.className = "fa fa-chevron-circle-down";
+				show1.style.display = 'block';
+				show2.style.display = 'none';
+			}
+		}
 	</script>
 	</body>
 </html>
