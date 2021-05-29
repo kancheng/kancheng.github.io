@@ -42,6 +42,7 @@
 				border-radius: 10px;
 				right: 20px;
 				bottom: 20px;
+				display: none;
 			}
 			.topbtnsize {
 				font-size: 30px;
@@ -221,7 +222,7 @@
 		<footer></footer>
 	</body>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script charset="utf-8">
+	<script type="text/javascript" charset="utf-8">
 		var themes = [
 			{
 				name: "sakura-vader",
@@ -244,14 +245,14 @@
 				$('button.totop').fadeIn(300);
 			} else {
 				$('button.totop').fadeOut(300);
-			}
+			}			
 		})
 		$(function() {
-			//To top effect
+		//To top effect
 			$('button.totop').on('click', function() {
 				$('html, body').animate({
 					scrollTop: 0
-				}, 1500);
+				}, 800);
 				return false;
 			})
 		})
