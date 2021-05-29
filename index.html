@@ -4,18 +4,12 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
-		<meta name="author" content="">
+		<meta name="author" content="kancheng">
 		<title>Haoye</title>
-
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link rel = "stylesheet" type = "text/css" href = "css/main.css">
-		<link rel = "stylesheet" type = "text/css" href = "css/terminal-command-line.css">
-
-		<!-- D3.js -->
-		<script src="js/d3.356.min.js" charset="utf-8"></script>
 		<link rel="shortcut icon" href="favicon.ico"/>
-		<script src="js/typeitjs.js"></script>
-
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link id="sakura-css" rel="stylesheet" href="css/sakura-vader.css">
+		<!-- <link id="sakura-css" rel="stylesheet" href="css/sakura.css"> -->
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133235714-1"></script>
 		<script>
@@ -25,589 +19,112 @@
 
 			gtag('config', 'UA-133235714-1');
 		</script>
-
-
-		<link rel = "stylesheet" type = "text/css" href = "css/rd-chart-d3js.css">
-		<script src="js/languageData.js" type="text/javascript"></script>
-		<script>
-			function chg_lan(lan_index) 
-			{ 
-				var myLangArray; 
-
-				switch(lan_index) 
-				{ 
-				/* languageData.js */
-				case 1: 
-				myLangArray = L_taiwan; 
-				break; 
-				case 2: 
-				myLangArray = L_china; 
-				break; 
-
-				default :
-				/* Taiwan */
-				myLangArray = L_english; 
-				break; 
-
-				}
-				/* 將各個文字, 填入指定位置 */
-
-				/* Horst Kan */
-				document.getElementById('Lan0').innerHTML = myLangArray[0];
-
-				/* Education */
-				document.getElementById('Lan1').innerHTML = myLangArray[1];
-
-				/* Experience */
-				document.getElementById('Lan2').innerHTML = myLangArray[2];
-
-				/* Skills */
-				document.getElementById('Lan3').innerHTML = myLangArray[3];
-
-
-				document.getElementById('Lan4').innerHTML = myLangArray[4];
-				document.getElementById('Lan5').innerHTML = myLangArray[5];
-				document.getElementById('Lan6').innerHTML = myLangArray[6];
-				document.getElementById('Lan7').innerHTML = myLangArray[7];
-				document.getElementById('Lan8').innerHTML = myLangArray[8];
-				document.getElementById('Lan9').innerHTML = myLangArray[9];
-				document.getElementById('Lan10').innerHTML = myLangArray[10];
-				document.getElementById('Lan11').innerHTML = myLangArray[11];
-
-				document.getElementById('Lan12').innerHTML = myLangArray[12];
-				document.getElementById('Lan13').innerHTML = myLangArray[13];
-				document.getElementById('Lan14').innerHTML = myLangArray[14];
-				document.getElementById('Lan15').innerHTML = myLangArray[15];
-
-				/* Project */
-				document.getElementById('prj-1-txt-show').innerHTML = myLangArray[16];
-				document.getElementById('prj-1-txt-hide').innerHTML = myLangArray[17];
-
-			}
-	</script>
-
-		<!-- Font Awesome v5.6.3 -->
-		<link rel="stylesheet" href="css/font-awesome.v563.min.css">
-
 	</head>
 	<body>
-	<div class="container-fluid">
-		<section class="header-nav" id="Home">
-			<div class="pos-f-t">
-				<nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
-					<a class="navbar-brand" href="#Home"><h4 id = "Lan0" class="text-white">Horst Kan</h4></a>
-					<button 
-						class="navbar-toggler" 
-						type="button" 
-						data-toggle="collapse" 
-						data-target="#navbarText" 
-						aria-controls="navbarText" 
-						aria-expanded="false" 
-						aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarText">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item">
-							<a id = "Lan1" class="nav-link" href="#education">Education</a>
-						</li>
-						<li class="nav-item">
-							<a id = "Lan2" class="nav-link" href="#experience">Experience</a>
-						</li>
-						<li class="nav-item">
-							<a id = "Lan3" class="nav-link" href="#skills">Skills</a>
-						</li>
-						<li class="nav-item">
-							<a id = "Lan4" class="nav-link" href="#project">Project</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a id = "Lan5" class="nav-link dropdown-toggle" href="#" id="dropdownLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
-							<div class="dropdown-menu" aria-labelledby="dropdown04">
-								<a id = "Lan6" onclick="chg_lan(0)" class="dropdown-item" href="#">English</a>
-								<a id = "Lan7" onclick="chg_lan(1)" class="dropdown-item" href="#">Traditional Chinese</a>
-								<a id = "Lan8" onclick="chg_lan(2)" class="dropdown-item" href="#">Simplified Chinese</a>
-							</div>
-						</li>
-					</ul>
-					</div>
-
-				</nav>
-			</div>
-		</section>
-	</div>
-	<a href="#" class="totop"><i class="fa fa-angle-up"></i></a>
-	<div class="jumbotron-fluid main-content">
-	<div class="jumbotron main-cw">
-		<section class="horst-cv" id="kan">
-			<div class="container">
-				<div class="main">
-					<div class="text-center ">
-						<img
-							class="haoye-pic img-thumbnail rounded-circle"
-							src="image/haoye.jpg"
-							draggable="false"
-						/>
-					</div>
-					<br />
-					<div class = "row">
-						<div class="col-12">
-							<span id = "Lan9" style=" font-size: 8vmin" class="display-3">
-								Horst Kan
-							</span><br />
-							<span class="minscrfont" style="font-size: 3vmin">
-								Hao-Cheng Kan
-							</span>
-							<br />
-							<!-- Button trigger modal -->
-							<button type="button" class="btn btn-dark btn-circle minscrshow more-btn">
-								<img 
-									id = "minscrshow" 
-									class="minscrshow more-icon" 
-									src = "image/more/more.svg"  
-									data-toggle="modal" 
-									data-target="#exampleModalCenter"
-								>
-							</button>
-							<!-- Modal -->
-							<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-								<div class="modal-dialog modal-dialog-centered" role="document">
-									<div class="modal-content">
-										<div class="modal-header">
-											<h5 class="modal-title" id="exampleModalLongTitle">Horst Kan</h5>
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-											</button>
-										</div>
-										<div id = "Lan10" class="modal-body">
-											Coding, R, Python, PHP and JavaScript are my passions. <br />
-											They are hoped to be my job in the future. <br />
-											Graduated from the Department of Information Management,<br /> 
-											Lunghwa University of Science and Technolog.<br />
-											I intend to be a Data Analyst and Web Developer.<br /><br />
-										</div>
-										<div class="modal-footer ">
-											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-12">
-							<div class="minscrfont" style="font-size: 2vmin;height: 25vh;">
-								<div class="head">
-									<span id = "Lan11" class="type">
-									Coding, R, Python, PHP and JavaScript are my passions.<br />
-									They are hoped to be my job in the future.<br />
-									Graduated from the Department of Information Management,<br />
-									Lunghwa University of Science and Technology.<br />
-									I intend to be a Data Analyst and Web Developer.</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-12">
-							<a href = "http://kanchengzxdfgcv.blogspot.tw/" data-toggle="tooltip" data-placement="left" title="My Blogger" style="text-decoration:none;">
-								<img class="book-icon" src = "image/book.png">
-							</a>
-						&emsp;
-							<a href = "https://github.com/kancheng" data-toggle="tooltip" data-placement="right" title="My GitHub" style="text-decoration:none;">
-								<img class="github-icon" src = "image/github.png">
-							</a>
-							<br />
-						</div>
-					</div>
+		<header>
+			<h1>Hao-Cheng Kan</h1>
+			<p>
+				b. 29 Sep 1993<br>
+				+ 886 917 001 028<br>
+				zxdfgcv@gmail.com<br>
+			</p>
+		</header>
+		<main>
+			<article>
+				<header>
+					<h2>EDUCATION</h2>
+				</header>
+				<div>
+					<hr>
 				</div>
-			</div>
-		</section>
-	</div>
-	</div>
-			<script src="js/jquery-slim.min.js"></script>
-			<script src="js/popper.min.js"></script>
-			<script src="js/util.js"></script>
-			<script src="js/tooltip.js"></script>
-			<script>
-				$(function () {
-					$('[data-toggle="tooltip"]').tooltip()
-					$('#target').tooltip({
-						placement : 'top',
-						trigger : 'manual'
-					}).tooltip('show')
-				})
-			</script>
-
-			<script src="js/jquery.min.js"></script> 
-			<script src="js/main.js"></script>
-
-		<section class="education" id="education" >
-			<div class="container mt-3 mb-3" >
-					<div class="row">
-						<div class="col-12">
-							<br /><br /><br /><br />
-							<span id = "Lan12" style=" font-size: 7vmin" class="display-3">
-								Education
-							</span>
-							<ul class="timeline">
-								<li>
-									<a target="_blank" href="#Home">Master of Information Management</a>
-									<a href="#Home" class="float-right">2015 - 2017</a>
-									<p>Lunghwa University of Science and Technolog</p>
-									<p>Institute of Information Management</p>
-								</li>
-								<li>
-									<a href="#Home">Bachelor of Information Management</a>
-									<a href="#Home" class="float-right">2012 - 2015</a>
-									<p>Lunghwa University of Science and Technolog</p>
-									<p>Department of Information Management</p>
-								</li>
-								<li>
-									<a href="#Home">Vocational High School</a>
-									<a href="#Home" class="float-right">2008 - 2011</a>
-									<p>St.Francis Xavier High School</p>
-									<p>Department of International Trade</p>
-								</li>
-							</ul>
-						</div>
-					</div>
-			</div>
-		</section>
-
-		<section class="experience" id="experience">
-			<!-- Main jumbotron for a primary marketing message or call to action -->
-			<div class="jumbotron">
-					<div class="container" >
-						<span id = "Lan13" style=" font-size: 7vmin" class="display-3">
-							Experience
-						</span>
-						<br />
-						<br />
-						<p>/* Hello World! */</p>
-						<div class="console">
-								<div>
-									<p>Download package ... Done.</p> 
-									<p>Install package ... Done.</p>
-									<p>Read package ... Done.</p>
-									<p>Complete! </p>
-									</div>
-									<div>
-									<span>root@horst: # <span  class="blink">_</span></span>
-									</div>
-						</div>
-					</div>
-			</div>
-			<div class="container">
-					<!-- Example row of columns -->
-					<div class="row">
-					  <div class="col-md-4">
-						<h2 style=" font-size: 3vmin" >JGNet</h2>
-						<p style=" font-size: 2vmin">Network Engineer | 2014</p>
-						<p style=" font-size: 1vmin">- Network</p>
-					  </div>
-					  <div class="col-md-4">
-						<h2 style=" font-size: 3vmin" >LHU</h2>
-						<p style=" font-size: 2vmin">Assistant | 2014 - 2015</p>
-						<p style=" font-size: 1vmin">- Linux Server</p>
-						<p style=" font-size: 1vmin">- Network</p>
-					  </div>
-					  <div class="col-md-4">
-						<h2 style=" font-size: 3vmin" >ROC-Army</h2>
-						<p style=" font-size: 2vmin">Corporal | 2017 - 2018</p>
-					  </div>
-					</div>
-			</div> <!-- /container -->
-			<br />
-			<br />
-			<hr />
-			<br />
-		</section>
-
-
-	<div class="jumbotron-fluid" >
-		<div class="jumbotron main-dk">
-			<section class="skills" id="skills">
-				<div class="container">
-					<br /><br /><br /><br />
-					<span id = "Lan14" style=" font-size: 7vmin" class="display-3">
-						Skills
-					</span>
-					<br /><br />
-					<br /><br />
-					<div class="row">
-						<div class="col">
-							<button type="button" class="btn btn-info btn-skill-sty" >R</button>&emsp;
-							<button type="button" class="btn btn-info btn-skill-sty" >PHP</button>&emsp;
-							<button type="button" class="btn btn-info btn-skill-sty" >JavaScript</button>&emsp;
-							<button type="button" class="btn btn-info btn-skill-sty" >Python</button>&emsp;
-							<button type="button" class="btn btn-info btn-skill-sty" >MariaDB</button>&emsp;
-							<button type="button" class="btn btn-info btn-skill-sty" >Android</button>&emsp;
-							<button type="button" class="btn btn-info btn-skill-sty" >Java</button>&emsp;
-							<button type="button" class="btn btn-info btn-skill-sty" >HTML</button>&emsp;
-							<button type="button" class="btn btn-info btn-skill-sty" >C#</button>&emsp;
-							<button type="button" class="btn btn-info btn-skill-sty" >ASP</button>&emsp;
-							<button type="button" class="btn btn-info btn-skill-sty" >CSS</button>
-						</div>
-					</div>
-					<br /><br />
-					<div class="row">
-						<div class="col-md-4">
-							<h2 style=" font-size: 3vmin" >R</h2>
-							<p style=" font-size: 2vmin">90%</p>
-							<div class="progress">
-								<div
-									class="progress-bar progress-bar-striped bg-info" 
-									role="progressbar" 
-									style="width: 90%" 
-									aria-valuenow="50" 
-									aria-valuemin="0" 
-									aria-valuemax="100"
-								>
-								</div>
-							</div>
-							<br />
-						</div>
-						<div class="col-md-4">
-							<h2 style=" font-size: 3vmin" >PHP</h2>
-							<p style=" font-size: 2vmin">60%</p>
-							<div class="progress">
-								<div
-									class="progress-bar progress-bar-striped bg-info" 
-									role="progressbar" 
-									style="width: 60%" 
-									aria-valuenow="50" 
-									aria-valuemin="0" 
-									aria-valuemax="100"
-								>
-								</div>
-							</div>
-							<br />
-						</div>
-						<div class="col-md-4">
-							<h2 style=" font-size: 3vmin" >JavaScript</h2>
-							<p style=" font-size: 2vmin">70%</p>
-							<div class="progress">
-								<div
-									class="progress-bar progress-bar-striped bg-info" 
-									role="progressbar" 
-									style="width: 70%" 
-									aria-valuenow="50" 
-									aria-valuemin="0" 
-									aria-valuemax="100"
-								>
-								</div>
-							</div>
-							<br />
-						</div>
-						<div class="col-md-4">
-							<h2 style=" font-size: 3vmin" >Python</h2>
-							<p style=" font-size: 2vmin">60%</p>
-							<div class="progress">
-								<div
-									class="progress-bar progress-bar-striped bg-info" 
-									role="progressbar" 
-									style="width: 60%" 
-									aria-valuenow="50" 
-									aria-valuemin="0" 
-									aria-valuemax="100"
-								>
-								</div>
-							</div>
-							<br />
-						</div>
-						<div class="col-md-4">
-							<h2 style=" font-size: 3vmin" >MariaDB</h2>
-							<p style=" font-size: 2vmin">65%</p>
-							<div class="progress">
-								<div
-									class="progress-bar progress-bar-striped bg-info" 
-									role="progressbar" 
-									style="width: 65%" 
-									aria-valuenow="50" 
-									aria-valuemin="0" 
-									aria-valuemax="100"
-								>
-								</div>
-							</div>
-							<br />
-						</div>
-						<div class="col-md-4">
-							<h2 style=" font-size: 3vmin" >Andriod</h2>
-							<p style=" font-size: 2vmin">60%</p>
-							<div class="progress">
-								<div
-									class="progress-bar progress-bar-striped bg-info" 
-									role="progressbar" 
-									style="width: 60%" 
-									aria-valuenow="50" 
-									aria-valuemin="0" 
-									aria-valuemax="100"
-								>
-								</div>
-							</div>
-							<br />
-						</div>
-						<div class="col-md-4">
-							<h2 style=" font-size: 3vmin" >Java</h2>
-							<p style=" font-size: 2vmin">50%</p>
-							<div class="progress">
-								<div
-									class="progress-bar progress-bar-striped bg-info" 
-									role="progressbar" 
-									style="width: 50%" 
-									aria-valuenow="50" 
-									aria-valuemin="0" 
-									aria-valuemax="100"
-								>
-								</div>
-							</div>
-							<br />
-						</div>
-						<div class="col-md-4">
-							<h2 style=" font-size: 3vmin" >HTML</h2>
-							<p style=" font-size: 2vmin">80%</p>
-							<div class="progress">
-								<div
-									class="progress-bar progress-bar-striped bg-info" 
-									role="progressbar" 
-									style="width: 80%" 
-									aria-valuenow="50" 
-									aria-valuemin="0" 
-									aria-valuemax="100"
-								>
-								</div>
-							</div>
-							<br />
-						</div>
-					</div>
-					<br />
+				<p>
+Lunghwa University of Science and Technology
+Master of Business Administration in Information Management					Aug 2015 – Jun 2017
+Bachelor of Business Administration in Information Management				Aug 2011 – Jun 2015
+	Academic Excellent Awards (Nov 2012, Apr 2013, Oct 2013 and May 2014)
+	Minors: Financial Technology; Innovative Entrepreneurship 
+				</p>
+			</article>
+			<article>
+				<header>
+					<h2>WORK</h2>
+				</header>
+				<div>
+					<hr>
 				</div>
-			</section>
-			<hr />
-		</div>
-	</div>
-
-
-
-		<section>
-			<div class="container justify-content-center">
-				<div id="rcd3"><div class="radarChart"></div></div>
-				<br />
-				<br />
-				<br />
-			</div>
-		</section>
-
-	<script src="js/radarChart.js"></script>
-	<script src="js/rd-chart-d3.js"></script>
-	
-	<div class="jumbotron">
-		<section class="project" id="project">
-			<div class="container">
-				<br /><br /><br />
-					<span id = "Lan15" style=" font-size: 7vmin" class="display-3">
-							Project
-					</span>
-				<br /><br /><br />
-				<div class="row">
-					<div class="col" style="text-align: center;">
-						<img
-							style = "width: 50vw; height: auto;"
-							src="image/proj/proj1/pj-1-1.PNG"
-						/>
-						<br />
-					</div>
+				<p>
+OxBridge Consulting Inc
+Engineer																Dec 2018 – Jul 2020
+	User interface design
+	Front- and back-end development
+	Conducting systems function tests
+	Programming languages and software employed: JavaScript, AngularJS, PHP, CSS, MySql, AWS, and Ubuntu Server
+Compulsory Military Service
+Corporal																Dec 2017 – Dec 2018
+	Participating in military trainings
+	Team management, including daily service support, counselling, new recruit orientation, etc.
+	Assistance in disaster relief
+Lunghwa University of Science and Technology
+Lab and Teaching Assistant												Aug 2014 – Aug 2016
+	Network equipment implementation and maintenance
+	Assistance in the teaching and assignment grading for courses on Linux Server and R programming
+JGNet Taiwan
+Network Engineer														May 2014 – Aug 2014
+	Broadband network design, installation and maintenance for residential communities
+				</p>
+			</article>
+			<article>
+				<header>
+					<h2>PROFESSIONAL SKILLS</h2>
+				</header>
+				<div>
+					<hr>
 				</div>
-				<br /><br /><br />
-				<div class="row">
-					<div class="col">
-						<div class="card">
-							<div class="card-body">
-								<div>
-									<button id="prj-summary-1" class="btn btn-outline-info" type="button" onclick="showProject_1();" style = "width: 10vw">
-										<i class="fa fa-project-diagram"></i>
-										Abstract
-										<i id = "prj-summary-1-btn-down" class="fa fa-chevron-circle-down"></i>
-									</button>
-									&emsp;
-									<button class="btn btn-outline-primary" type="button" onclick = "self.location.href='https://github.com/kancheng/rsloan'" style = "width: 10vw">
-										<i class="fa fa-code-branch"></i>
-										Project
-									</button>
-								</div>
-								<br />
-								<hr />
-								<br />
-								<div id = "prj-1-show">
+				<p>
+Programming				R, PHP, JavaScript, Java, Python, C#, Visual Basic, CSS
+Server					Ubuntu, RedHat, SuSE, Windows Server
+Data						MariaDB, Oracle 11g, MS SQL, Hadoop
+Project Management		GitHub
 
-									&emsp;&emsp;
-									<span id = "prj-1-txt-show">
-										This research had constructed an interactive system of academic achievement analysis (A3S) with R Shiny technique which includes easy used functions of data preparation, data demographics, clustering analysis validation, analysis of variances and data visualization for teachers. This study also had completed the works of data understanding, data managing and data defining for eight-year scores data of compulsory subjects of all departments in the Business School based on the standard process for big data analysis. Finally, a case study on the academic achievements of the students enrolled in 2009 of the Department of Information Management was demonstrated for the system advantage.
-									</span>
-								</div>
-								<br />
-								<div id="prj-1-txt-more">
-									<h3  style="text-align:center; color: #8C8C8C; display:block;"> . . . </h3>
-								</div>
-								<div id = "prj-hide-1" style="display:none;">
-									&emsp;&emsp;
-
-									<span id = "prj-1-txt-hide">
-										The A3S system lets the users determine the parameters of cluster analysis by choosing the necessary subjects. When dividing the subjects into three categories: measurement, management and profession, choosing the subjects of calculation, economic and programming design as three indicators of academic achievements of the freshmen and using the condition of applying student loans as economic indicator, the case study of the Department of Information Management has found that the cluster analysis can forecast the performance of senior courses. Therefore, this system will aim at choosing their own useful subjects as effective indicators of cluster analysis for each department, help the teachers to discover the learning performance of students, to design the appropriate teaching facilities, teaching goals and methods, and to meet the requirements of students’ academic achievements.
-									</span>
-								</div>
-
-  							</div>
-						</div>
-					</div>
+				</p>
+			</article>
+			<article>
+				<header>
+					<h2>PROFESSIONAL CERTIFICATIONS</h2>
+				</header>
+				<div>
+					<hr>
 				</div>
-
-			</div>
-		</section>
-	</div>
-
-		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-		<a class="navbar-brand" href="#Home">Top</a>
-		</nav>
-
-		<script src="js/bootstrap.min.js"></script>
-
-	<script type="text/javascript">
-			chg_lan(0); 
-
-		$(document).ready(function(){
-			/* Add smooth scrolling to all links */
-			$("a").on('click', function(event) {
-				/* Make sure this.hash has a value before overriding default behavior */
-				if (this.hash !== "") {
-				/* Prevent default anchor click behavior */
-				event.preventDefault();
-					/* Store hash */
-					var hash = this.hash;
-					/* Using jQuery's animate() method to add smooth page scroll*/
-					/* The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area*/
-					$('html, body').animate({
-						scrollTop: $(hash).offset().top
-					}, 800, function(){
-					/* Add hash (#) to URL when done scrolling (default click behavior)*/
-					window.location.hash = hash;
-					});
-				} /* End if */
-			});
-		}); 
-
-		function showProject_1(id) {
-			var show1 = document.getElementById('prj-1-txt-more');
-			var show2 = document.getElementById('prj-hide-1');
-			var show3 = document.getElementById('prj-summary-1-btn-down');
-
-			if (show1.style.display != 'none' || show2.style.display != 'block') {
-				show3.className = "fa fa-chevron-circle-up";
-				show1.style.display = 'none';
-				show2.style.display = 'block'
-			} else {
-				show3.className = "fa fa-chevron-circle-down";
-				show1.style.display = 'block';
-				show2.style.display = 'none';
-			}
-		}
-	</script>
+				<p>
+	e-Enterprise Data Analyst, 2016
+	Red Hat Certified System Administrator (RHCSA), 2015
+	Novell Certified Linux Administrator (NCLA 11), 2014
+	Oracle Certified Expert (OCE 10g), 2014
+	Oracle Certification for Java Programmer (OCJP 6), 2013
+	IPMA Certified Project Management Associate (Level D), 2013 
+				</p>
+			</article>
+			<article>
+				<header>
+					<h2>RESEARCH/PROJECTS</h2>
+				</header>
+				<div>
+					<hr>
+				</div>
+				<p>
+The Impacts of China’s Deleveraging on the Chinese Economy (Jan 2019 – Dec 2019)
+	Description: This research first used the DSGE model to analyze the volatility of China's total output value, annual interest rate, and inflation rate for the overall economy of China from 1992 to 2017. Then, using the VAR, it found that the deleveraging of non-financial enterprises had short-term negative impacts on the overall economic growth rate, which would decrease with time. In the long run, the deleveraging of non-financial enterprises had minimal impacts on the overall economic growth rate. 
+	Keywords: Dynamic Stochastic General Equilibrium (DSGE), Vector Autoregression Model (VAR), macroeconomics, deleveraging, business cycle, Basel III, shadow banking system, H-P filter
+A3S Academic Achievement Analysis System (Aug 2015 – Sep 2017)
+	Description: This project developed an interactive academic achievement analysis system, analyzing students of information management at Longhua University of Science and Technology, who entered after 2008, by their performance in different types of courses, their economic conditions, and post-graduation employment. It can thus predict the career development after graduation based on individual students’ initial conditions.
+	Hao-Cheng Kan & Fang-Ling Lin (10 Dec 2016). The Impact of Student Loans on Academic Performance: A Cluster and Visual Analysis. presented at the 22th CSIM IMP, Taichung, Taiwan.
+	Programming languages and software employed: R, RShiny Server, MariaDB, and Ubuntu Server
+S-Gate e-Learning and Classroom Management System (Aug 2013 – Aug 2015)
+	Description: This project designed a mobile teaching system based on the concept of e-campus, which had two kinds of functions. The first simplified the operation of student affairs and classroom management, enabling activities such as Bluetooth attendance tracking. The second enabled the use of mobile devices for real-time class interactions such as teaching contents delivery, assessment, group discussion, Q&A, etc.
+	Programming languages and software employed: Node, JS, PHP, MariaDB, Android, and Ubuntu Server
+				</p>
+			</article>
+		</main>
+		<footer></footer>
 	</body>
 </html>
