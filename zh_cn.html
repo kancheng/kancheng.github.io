@@ -7,7 +7,6 @@
 		<meta name="author" content="kancheng">
 		<title>Haoye</title>
 		<link rel="shortcut" href="favicon.ico"/>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link id="sakura-css" rel="stylesheet" href="css/sakura-vader.css">
 		<!-- <link id="sakura-css" rel="stylesheet" href="css/sakura.css"> -->
@@ -24,8 +23,11 @@
 	<body>
 		<header>
 			<h1>干皓丞</h1>
-				<button id="switchThemeButton" class="sun-dark-btn" onclick="switchSakuraTheme();" >🌓</button>
-				<button class="totop topbtn"><b class="topbtnsize">^</b></button>
+				<button id="switchThemeButton" class="huge-btn sun-dark-btn" onclick="switchSakuraTheme();" >🌓</button>
+				<button class="huge-btn totop topbtn"><b class="topbtnsize">^</b></button>
+				<button class="huge-btn lang-btn-en" onclick="document.location.href = 'index.html'"><b class="common-btn-size-en">EN</b></button>
+				<button class="huge-btn lang-btn-tc" onclick="document.location.href = 'zh_tw.html'"><b class="common-btn-size-zh">繁</b></button>
+				<button class="huge-btn lang-btn-sc" onclick="document.location.href = 'zh_cn.html'"><b class="common-btn-size-zh">简</b></button>
 			<p>
 				b. 29 Sep 1993<br />
 				+ 886 917 001 028<br />
@@ -190,54 +192,10 @@
 				</p>
 			</article>
 		</main>
-		<footer></footer>
+		<footer>
+			
+		</footer>
 	</body>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" charset="utf-8">
-		var themes = [
-			{
-				name: "sakura-vader",
-				href: "sakura-vader.css",
-			},
-			{
-				name: "sakura-earthly",
-				href: "sakura-earthly.css",
-			}
-		];
-		var parent_v = document.getElementById("parent-v");
-		var parent_g = document.getElementById("parent-g");
-		var current = 0;
-		var sakura = document.getElementById("sakura-css");
-		var tem_key = '';
-		function switchSakuraTheme() {
-			tem_key = (current + 1)% themes.length;
-			sakura.href = 'css/' + themes[tem_key].href;
-			console.log(tem_key);
-			if (themes[tem_key].name == themes[0].name) {
-				parent_v.style.display = "block";parent_g.style.display = "none";
-				console.log("00000");
-			} else if (themes[tem_key].name == themes[1].name) {
-				parent_v.style.display = "none";parent_g.style.display = "block";
-				console.log("11111");
-			} 
-			current += 1
-		}
-		$(window).scroll(function() {
-			var $window = $(window).scrollTop();
-			if ($window > 300) {
-				$('button.totop').fadeIn(300);
-			} else {
-				$('button.totop').fadeOut(300);
-			}			
-		})
-		$(function() {
-		//To top effect
-			$('button.totop').on('click', function() {
-				$('html, body').animate({
-					scrollTop: 0
-				}, 800);
-				return false;
-			})
-		})
-	</script>
+	<script type="text/javascript" src="js/main.js" charset="utf-8"></script>
 </html>
