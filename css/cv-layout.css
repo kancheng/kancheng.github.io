@@ -58,54 +58,17 @@
     margin-bottom: 2.8em;
 }*/
 
-@media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){
-	/* 相容iphone5 */
+@media (max-width: 500px) {
 	li {
+		margin-bottom: 2em;
+	}
+	li.minli {
 		margin-bottom: 2.8em;
 	}
-} 
-@media only screen and (max-device-width :480px){
-	li {
-		margin-bottom: 2.8em;
-	}
-} 
-@media only screen and (min-device-width :481px){
-	li {
-		margin-bottom: 2.8em;
-	}
-} 
+}
 
-/*6*/ 
-@media (min-device-width : 375px) and (max-device-width : 667px) and (-webkit-min-device-pixel-ratio : 2){
-	li {
+@media (max-width: 768px) {
+	li.minli {
 		margin-bottom: 2.8em;
 	}
-} 
-
-/*6+*/ 
-@media (min-device-width : 414px) and (max-device-width : 736px) and (-webkit-min-device-pixel-ratio : 3){
-	li {
-		margin-bottom: 2.8em;
-	}
-} 
-
-/*魅族*/ 
-@media only screen and (min-device-width :1080px) and (-webkit-min-device-pixel-ratio : 2.5){
-	li {
-		margin-bottom: 2.8em;
-	}
-} 
-
-/*mate7*/ 
-@media only screen and (min-device-width :1080px) and (-webkit-min-device-pixel-ratio : 3){
-	li {
-		margin-bottom: 2.8em;
-	}
-} 
-
-/*4 4s*/ 
-@media only screen and (device-height :480px) and (-webkit-device-pixel-ratio:2){
-	li {
-		margin-bottom: 2.8em;
-	}
-} 
+}
