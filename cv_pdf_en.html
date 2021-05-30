@@ -11,16 +11,18 @@
 		<link id="sakura-css" rel="stylesheet" href="css/sakura-vader.css">
 		<!-- <link id="sakura-css" rel="stylesheet" href="css/sakura.css"> -->
 		<link rel="stylesheet" href="pdf/css/pdf-cv-layout.css">
+		<style type="text/css"></style>
 	</head>
 	<body>
-		<header>
+		<div></div>
+		<section class="section_outer" id="html_content1">
+			<article>
 			<h1>Hao-Cheng Kan</h1>
 			<p>
 				b. 29 Sep 1993<br />
 				+ 886 917 001 028<br />
-				zxdfgcv@gmail.com<br />
-		</header>
-		<main>
+				zxdfgcv@gmail.com<br />				
+			</article>
 			<article>
 				<header>
 					<h2>EDUCATION</h2>
@@ -118,6 +120,8 @@
 					</li>
 				</ui>
 			</article>
+		</section>
+		<section class="section_outer" id="html_content2">
 			<article>
 				<header>
 					<h2>PROFESSIONAL CERTIFICATIONS</h2>
@@ -160,11 +164,67 @@
 					</ul>
 				</p>
 			</article>
-		</main>
-		<footer>
-			
-		</footer>
+		</section>
 	</body>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="pdf/js/jquery.min.js"></script>
 	<script type="text/javascript" src="pdf/js/pdf-main.js" charset="utf-8"></script>
+	<script type="text/javascript" src="pdf/js/excanvas.min.js"></script>
+	<script type="text/javascript" src="pdf/js/jquery.flot.min.js"></script>
+	<script type="text/javascript" src="pdf/js/jquery.flot.pie.min.js"></script>
+	<script type="text/javascript" src="pdf/js/html2canvas.js"></script>
+	<script type="text/javascript" src="pdf/js/pdfmake.js"></script>
+	<script type="text/javascript">
+		function pdf(){
+			if(document.readyState == "complete"){
+				let docDefinition = {
+					content: [],
+					pageSize: 'A4',
+					pageMargins: [0, 0, 0, 0]
+				};
+				const exec = (index) => {
+					const id = '#html_content'+index;
+					return html2canvas(document.querySelector(id),{useCORS:true})
+					.then(canvas => { 
+						return {
+							image: canvas.toDataURL('image/png'),
+							width: 595,
+							height: 841.89 
+						};
+					});
+				};
+				const promiseSerial = funcs =>
+					funcs.reduce((promise, func) =>
+					promise.then(result => func(result).then(Array.prototype.concat.bind(result))),
+					Promise.resolve([]),
+				);
+				const list = new Array();
+				for($i = 1;$i <= document.getElementsByTagName('section').length; $i++){
+					list.push($i);
+				}
+				const funcs = list.map(index => () => {
+					return exec(index);
+				});
+				promiseSerial(funcs)
+					.then((contents) => {
+					docDefinition.content = contents;
+					pdfMake.createPdf(docDefinition).download("CV.pdf");
+				});
+			}
+		}
+		$(window).load(function() {
+			/* ES 6 */
+			const readyLoad = callback => {
+				if (Document.readyState === 'complete'){
+					document.getElementById("pdf").disabled = false;
+					callback();
+				} else {
+					document.addEventListener('load', function() {
+						document.getElementById("pdf").disabled = true;
+						callback();
+					})
+				}
+			}
+			readyLoad();
+		});
+	</script>
 </html>
