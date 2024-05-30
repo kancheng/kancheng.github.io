@@ -8,33 +8,25 @@
 		<title>Haoye - Horst Kan</title>
 		<link rel="shortcut" href="favicon.ico"/>
 		<link rel="stylesheet" href="css/normalize.css" />
-		<link id="sakura-css" rel="stylesheet" href="css/sakura-vader.css">
-		<!-- <link id="sakura-css" rel="stylesheet" href="css/sakura.css"> -->
+
+		<link id="sakura-css" rel="stylesheet" href="css/sakura.css">
 		<link rel="stylesheet" href="css/cv-layout.css">
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133235714-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'UA-133235714-1');
-		</script>
+
 	</head>
 	<body>
 		<header>
 			<h1>干皓丞</h1>
-				<button id="switchThemeButton" class="huge-btn sun-dark-btn" onclick="switchSakuraTheme();" >🌓</button>
 				<button class="huge-btn totop topbtn"><b class="topbtnsize">^</b></button>
-				<button class="huge-btn lang-btn-en" onclick="document.location.href = 'index.html'"><b class="common-btn-size-en">EN</b></button>
+				<!-- <button class="huge-btn lang-btn-en" onclick="document.location.href = 'index.html'"><b class="common-btn-size-en">EN</b></button>
 				<button class="huge-btn lang-btn-tc" onclick="document.location.href = 'zh_tw.html'"><b class="common-btn-size-zh">繁</b></button>
-				<button class="huge-btn lang-btn-sc" onclick="document.location.href = 'zh_cn.html'"><b class="common-btn-size-zh">简</b></button>
+				<button class="huge-btn lang-btn-sc" onclick="document.location.href = 'zh_cn.html'"><b class="common-btn-size-zh">简</b></button> -->
 			<p>
 				b. 29 Sep 1993<br />
 				+ 886 917 001 028<br />
 				+ 86 15889439001<br />
 				zxdfgcv@gmail.com<br />
 				kanhorst@stu.pku.edu.cn<br />
-				<div id="parent-v">
+				<div id="parent-v" style="display: none;">
 					<img class="icon" src="image/blogger-brands-w.svg" onclick="window.open('https://kanchengzxdfgcv.blogspot.tw/');">
 					<img class="icon" src="image/github-square-brands-w.svg" onclick="window.open('https://github.com/kancheng');">
 					<img class="icon" src="image/facebook-square-brands-w.svg" onclick="window.open('https://www.facebook.com/haoye.kan.zxdfgcv');">
@@ -43,7 +35,7 @@
 					<img class="icon" src="image/twitter-square-brands-w.svg" onclick="window.open('https://twitter.com/haochengkan');">
 					<img class="icon" src="image/researchgate-brands-w.svg" onclick="window.open('https://www.researchgate.net/profile/Hao-Cheng-Kan');">
 				</div>
-				<div id="parent-g" style="display: none;">
+				<div id="parent-g">
 					<img class="icon" src="image/blogger-brands.svg" onclick="window.open('https://kanchengzxdfgcv.blogspot.tw/');">
 					<img class="icon" src="image/github-square-brands.svg" onclick="window.open('https://github.com/kancheng');">
 					<img class="icon" src="image/facebook-square-brands.svg" onclick="window.open('https://www.facebook.com/haoye.kan.zxdfgcv');">
@@ -59,7 +51,23 @@
 			<!-- https://divyaguo.github.io/ -->
 			<article>
 				<header>
-					<h2>研究與專案</h2>
+					<h2>研究</h2>
+				</header>
+				<div>
+					<hr>
+				</div>
+				<p>
+					<h4><a href="https://hdl.handle.net/11296/45ru69">學業成就分析系統之研究：使用集群分析與視覺化 (Aug 2015 – Sep 2017)</a></h4><br />
+					<ul>
+						<li><b><a href="https://github.com/kancheng/rsloan">描述</a></b> 該研究專案開發了一個交互式學業成績分析系統，並分析 2008 年以後進入龍華科技大學管理學院的學生在不同類型的課程中的表現，包含他們的經濟狀況和畢業後的就業情況進行分析。 從而可以根據個別學生的初始情況預測畢業後的職業發展。 </li>
+						<li>Hao-Cheng Kan & Fang-Ling Lin (10 Dec 2016). The Impact of Student Loans on Academic Performance: A Cluster and Visual Analysis. presented at the 22th CSIM IMP, Taichung, Taiwan.</li>
+						<li><b><a href="https://github.com/kancheng/rsloan">程式語言和軟體使用</a></b> R、 RShiny Server、 MariaDB 和 Ubuntu Server</li>
+					</ul>
+				</p>
+			</article>
+			<article>
+				<header>
+					<h2>專案</h2>
 				</header>
 				<div>
 					<hr>
@@ -69,12 +77,6 @@
 					<ul>
 						<li><b>描述</b> 本研究首先以動態隨機一般均衡模型 (Dynamic Stochastic General Equilibrium; DSGE) 來分析中國自 1992 年至 2017 年各季度總產值、年利率和通貨膨脹率對於中國整體經濟社會的波動性。接著再以向量自迴歸模型 (Vector Autoregression Model; VAR ) 進行分析，從而得知非金融企業去槓桿對總體經濟成長率短期會有負面影響，過程隨時間的增加影響減小。長期而言，非金融企業去槓桿對總體經濟增長率影響極小，故建議中國政府在進行去槓桿應在短期時配合適當財政或貨幣政策，以降低去槓桿所產生的經濟成長率衝擊降低，來達到穩定經濟的目的。</li>
 						<li><b>關鍵字</b> 動態隨機一般均衡模型、向量自迴歸模型、濾波法、 總體經濟、景氣循環理論、巴塞爾協定 III、影子銀行、去槓桿</li>
-					</ul>
-					<h4><a href="https://hdl.handle.net/11296/45ru69">學業成就分析系統之研究：使用集群分析與視覺化 (Aug 2015 – Sep 2017)</a></h4><br />
-					<ul>
-						<li><b><a href="https://github.com/kancheng/rsloan">描述</a></b> 該研究專案開發了一個交互式學業成績分析系統，並分析 2008 年以後進入龍華科技大學管理學院的學生在不同類型的課程中的表現，包含他們的經濟狀況和畢業後的就業情況進行分析。 從而可以根據個別學生的初始情況預測畢業後的職業發展。 </li>
-						<li>Hao-Cheng Kan & Fang-Ling Lin (10 Dec 2016). The Impact of Student Loans on Academic Performance: A Cluster and Visual Analysis. presented at the 22th CSIM IMP, Taichung, Taiwan.</li>
-						<li><b><a href="https://github.com/kancheng/rsloan">程式語言和軟體使用</a></b> R、 RShiny Server、 MariaDB 和 Ubuntu Server</li>
 					</ul>
 					<h4>S-Gate 行動教學系統 (Aug 2013 – Aug 2015)</h4><br />
 					<ul>
