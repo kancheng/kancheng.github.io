@@ -41,6 +41,11 @@
 .common-btn-size-en {
 	font-size: 20px;
 }
+/* 語言切換按鈕：固定右側，垂直間距 60px（按鈕高 45px + 間隙 15px） */
+.lang-btn-en {
+	right: 20px;
+	top: 80px;
+}
 .lang-btn-sc {
 	right: 20px;
 	top: 140px;
@@ -49,9 +54,17 @@
 	right: 20px;
 	top: 200px;
 }
-.lang-btn-en {
+.lang-btn-ja {
 	right: 20px;
-	top: 80px;
+	top: 260px;
+}
+.lang-btn-fr {
+	right: 20px;
+	top: 320px;
+}
+.lang-btn-de {
+	right: 20px;
+	top: 380px;
 }
 
 /*li {
