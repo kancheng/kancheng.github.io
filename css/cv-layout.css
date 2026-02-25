@@ -46,27 +46,31 @@
 	right: 20px;
 	top: 80px;
 }
-.lang-btn-sc {
+
+.lang-btn-ja {
 	right: 20px;
 	top: 140px;
 }
-.lang-btn-tc {
+
+.lang-btn-fr {
 	right: 20px;
 	top: 200px;
 }
-.lang-btn-ja {
+
+.lang-btn-de {
 	right: 20px;
 	top: 260px;
 }
-.lang-btn-fr {
+
+.lang-btn-sc {
 	right: 20px;
 	top: 320px;
 }
-.lang-btn-de {
+
+.lang-btn-tc {
 	right: 20px;
 	top: 380px;
 }
-
 /*li {
     margin-bottom: 2.8em;
 }*/
