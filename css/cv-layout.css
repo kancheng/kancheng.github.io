@@ -18,6 +18,7 @@
 	height: 45px;
 	position: fixed;
 	border-radius: 10px;
+	z-index: 9999;
 }
 .sun-dark-btn {
 	right: 20px;
