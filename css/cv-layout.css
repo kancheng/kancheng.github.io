@@ -120,6 +120,67 @@
 	font-size: 0.8em;
 }
 
+/* CV 下載區塊：現代卡片網格 */
+.cv-download-section {
+	margin-bottom: 2.5rem;
+}
+.cv-download-section header {
+	margin-bottom: 1rem;
+}
+.cv-download-section h2 {
+	font-size: 1.35rem;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+}
+.cv-download-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+	gap: 0.75rem;
+}
+.cv-download-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.6rem;
+	padding: 0.85rem 1rem;
+	border-radius: 12px;
+	font-weight: 600;
+	font-size: 0.9rem;
+	text-decoration: none;
+	color: var(--cv-download-color, #1a1a1a);
+	background: var(--cv-download-bg, rgba(0, 0, 0, 0.04));
+	border: 1px solid var(--cv-download-border, rgba(0, 0, 0, 0.08));
+	transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+.cv-download-btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+	background: var(--cv-download-hover-bg, rgba(0, 0, 0, 0.07));
+	border-color: var(--cv-download-hover-border, rgba(0, 0, 0, 0.14));
+}
+.cv-download-btn:active {
+	transform: translateY(0);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+.cv-download-icon {
+	display: inline-flex;
+	flex-shrink: 0;
+	opacity: 0.85;
+}
+.cv-download-btn:hover .cv-download-icon {
+	opacity: 1;
+}
+.cv-download-label {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+@media (max-width: 480px) {
+	.cv-download-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
 /*li {
     margin-bottom: 2.8em;
 }*/
