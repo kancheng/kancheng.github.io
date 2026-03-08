@@ -71,6 +71,54 @@
 	right: 20px;
 	top: 380px;
 }
+
+/* 導航按鈕組：現代按鈕樣式 */
+.nav-buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	margin-top: 0.75rem;
+}
+.nav-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.5rem;
+}
+.nav-buttons .nav-label {
+	font-weight: bold;
+	margin-right: 0.25rem;
+	font-size: 0.95em;
+}
+.nav-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.45rem 0.9rem;
+	border-radius: 8px;
+	font-weight: 600;
+	font-size: 0.9em;
+	text-decoration: none;
+	background: var(--nav-btn-bg, rgba(0, 0, 0, 0.06));
+	color: var(--nav-btn-color, inherit);
+	border: 1px solid var(--nav-btn-border, rgba(0, 0, 0, 0.12));
+	transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+.nav-btn:hover {
+	background: var(--nav-btn-hover-bg, rgba(0, 0, 0, 0.1));
+	transform: translateY(-1px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.nav-btn:active {
+	transform: translateY(0);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+.nav-btn-here {
+	padding: 0.28rem 0.55rem;
+	font-size: 0.8em;
+}
+
 /*li {
     margin-bottom: 2.8em;
 }*/
