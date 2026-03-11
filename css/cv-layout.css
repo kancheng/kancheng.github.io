@@ -9,6 +9,14 @@
 	position: absolute;
 	right: 15%;
 }
+@media (max-width: 768px) {
+	.t-r-10,
+	.t-r-15 {
+		position: static;
+		display: block;
+		margin-top: 0.25rem;
+	}
+}
 .icon {
 	width: 25px;
 	height: 25px;
