@@ -81,6 +81,30 @@
 	top: 380px;
 }
 
+.lang-btn-home {
+	right: 20px;
+	top: 440px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+/* Academic / Presentations：無語言列，緊接主題按鈕下方 */
+.home-btn {
+	right: 20px;
+	top: 80px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.lang-btn-home svg,
+.home-btn svg {
+	display: block;
+}
+
 /* 導航按鈕組：現代按鈕樣式 */
 .nav-buttons {
 	display: flex;
