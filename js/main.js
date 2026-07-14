@@ -46,14 +46,16 @@ function applyTheme(index) {
 	if (!sakura || index < 0 || index >= themes.length) return;
 	var t = themes[index];
 	sakura.href = "css/" + t.href;
+	document.documentElement.setAttribute("data-theme", t.name);
 	setThemeCssVars(t.name);
 	if (parent_v && parent_g) {
+		var iconDisplay = document.body && document.body.classList.contains("home-page") ? "flex" : "block";
 		if (t.name === themes[0].name) {
-			parent_v.style.display = "block";
+			parent_v.style.display = iconDisplay;
 			parent_g.style.display = "none";
 		} else {
 			parent_v.style.display = "none";
-			parent_g.style.display = "block";
+			parent_g.style.display = iconDisplay;
 		}
 	}
 	current = index;

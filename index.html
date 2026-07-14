@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,126 +7,164 @@
 		<meta name="description" content="Horst Kan - CV">
 		<meta name="author" content="kancheng">
 		<title>Haoye - Horst Kan</title>
-		<link rel="shortcut" href="favicon.ico"/>
+		<link rel="shortcut icon" href="favicon.ico"/>
 		<link rel="stylesheet" href="css/normalize.css" />
-
 		<link id="sakura-css" rel="stylesheet" href="css/sakura.css">
 		<link rel="stylesheet" href="css/cv-layout.css">
-
+		<link rel="stylesheet" href="css/home.css">
 	</head>
-	<body>
-		<header>
-			<h1>Horst Kan</h1>
-			<h3>干皓丞</h3>
-				<button id="switchThemeButton" class="huge-btn sun-dark-btn" onclick="switchSakuraTheme();" >🌓</button>
-				<button class="huge-btn totop topbtn">
-					<svg width="20" height="20" viewBox="0 0 24 24">
-						<path d="M7 14l5-5 5 5" stroke="currentColor" stroke-width="2" fill="none"/>
-					</svg>
-				</button>
-			<p><a href="https://www.youtube.com/user/thecoscup">COSCUP</a> - Member</p>
-			<p>
-				b. 29 Sep 1993<br />
-				+ 886 917 001 028<br />
-				+ 86 15889439001<br />
-				+ 852 52747423<br />
-				zxdfgcv@gmail.com<br />
-				kanhorst@alumni.pku.edu.cn<br />
-				<div id="parent-v" style="display: none;">
-					<img class="icon" src="image/blogger-brands-w.svg" onclick="window.open('https://kanchengzxdfgcv.blogspot.tw/');">
-					<img class="icon" src="image/github-square-brands-w.svg" onclick="window.open('https://github.com/kancheng');">
-					<img class="icon" src="image/facebook-square-brands-w.svg" onclick="window.open('https://www.facebook.com/haoye.kan.zxdfgcv');">
-					<img class="icon" src="image/instagram-square-brands-w.svg" onclick="window.open('https://www.instagram.com/haoyetanxin929/');">
-					<img class="icon" src="image/linkedin-brands-w.svg" onclick="window.open('https://www.linkedin.com/in/haocheng-kan-b59b3b92/');">
-					<img class="icon" src="image/twitter-square-brands-w.svg" onclick="window.open('https://twitter.com/haochengkan');">
-					<img class="icon" src="image/researchgate-brands-w.svg" onclick="window.open('https://www.researchgate.net/profile/Hao-Cheng-Kan');">
+	<body class="home-page">
+		<button id="switchThemeButton" class="huge-btn sun-dark-btn" type="button" onclick="switchSakuraTheme();" aria-label="Switch theme">🌓</button>
+		<button class="huge-btn totop topbtn" type="button" aria-label="Back to top">
+			<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+				<path d="M7 14l5-5 5 5" stroke="currentColor" stroke-width="2" fill="none"/>
+			</svg>
+		</button>
+
+		<section class="home-hero" aria-label="Introduction">
+			<div class="home-hero__bg" aria-hidden="true"></div>
+			<div class="home-hero__grid" aria-hidden="true"></div>
+			<div class="home-hero__content">
+				<h1 class="home-hero__brand">Horst Kan</h1>
+				<p class="home-hero__zh">干皓丞</p>
+				<p class="home-hero__lead">
+					<a href="https://www.youtube.com/user/thecoscup">COSCUP</a> Member — research and engineering across trustworthy AI, computer vision, and intelligent manufacturing.
+				</p>
+				<div class="home-hero__cta">
+					<a class="home-cta home-cta--primary" href="#cv-download">Download CV</a>
+					<a class="home-cta home-cta--ghost" href="academic.html">Academic</a>
+					<a class="home-cta home-cta--ghost" href="presentations.html">Presentations</a>
 				</div>
-				<div id="parent-g">
-					<img class="icon" src="image/blogger-brands.svg" onclick="window.open('https://kanchengzxdfgcv.blogspot.tw/');">
-					<img class="icon" src="image/github-square-brands.svg" onclick="window.open('https://github.com/kancheng');">
-					<img class="icon" src="image/facebook-square-brands.svg" onclick="window.open('https://www.facebook.com/haoye.kan.zxdfgcv');">
-					<img class="icon" src="image/instagram-square-brands.svg" onclick="window.open('https://www.instagram.com/haoyetanxin929/');">
-					<img class="icon" src="image/linkedin-brands.svg" onclick="window.open('https://www.linkedin.com/in/haocheng-kan-b59b3b92/');">
-					<img class="icon" src="image/twitter-square-brands.svg" onclick="window.open('https://twitter.com/haochengkan');">
-					<img class="icon" src="image/researchgate-brands.svg" onclick="window.open('https://www.researchgate.net/profile/Hao-Cheng-Kan');">
+			</div>
+		</section>
+
+		<main class="home-main">
+			<section class="home-section home-contact" aria-labelledby="contact-heading">
+				<h2 id="contact-heading" class="home-section__title">Contact</h2>
+				<hr class="home-section__rule">
+				<div class="home-contact__meta">
+					<span>b. 29 Sep 1993</span>
+					<a href="tel:+886917001028">+ 886 917 001 028</a>
+					<a href="tel:+8615889439001">+ 86 15889439001</a>
+					<a href="tel:+85252747423">+ 852 52747423</a>
+					<a href="mailto:zxdfgcv@gmail.com">zxdfgcv@gmail.com</a>
+					<a href="mailto:kanhorst@alumni.pku.edu.cn">kanhorst@alumni.pku.edu.cn</a>
 				</div>
-				<div class="nav-buttons">
-					<div class="nav-row"><span class="nav-label">Resume</span>
-					<a class="nav-btn" href="en.html">English</a>
-					<a class="nav-btn" href="zh_cn.html">简体</a>
-					<a class="nav-btn" href="zh_tw.html">正體</a></div>
-					<div class="nav-row"><span class="nav-label">Academic</span><a class="nav-btn nav-btn-here" href="academic.html">Here</a></div>
-					<div class="nav-row"><span class="nav-label">Presentations</span><a class="nav-btn nav-btn-here" href="presentations.html">Here</a></div>
-					<div class="nav-row"><span class="nav-label">Workspace</span><a class="nav-btn nav-btn-here" href="https://kancheng.github.io/workspace-portal/">Portal</a></div>
-				</div>				
-			</p>
-		</header>
-		<main>
-			<article>
+				<div class="home-social">
+					<div id="parent-v" style="display: none;">
+						<img class="icon" src="image/blogger-brands-w.svg" alt="Blogger" onclick="window.open('https://kanchengzxdfgcv.blogspot.tw/');">
+						<img class="icon" src="image/github-square-brands-w.svg" alt="GitHub" onclick="window.open('https://github.com/kancheng');">
+						<img class="icon" src="image/facebook-square-brands-w.svg" alt="Facebook" onclick="window.open('https://www.facebook.com/haoye.kan.zxdfgcv');">
+						<img class="icon" src="image/instagram-square-brands-w.svg" alt="Instagram" onclick="window.open('https://www.instagram.com/haoyetanxin929/');">
+						<img class="icon" src="image/linkedin-brands-w.svg" alt="LinkedIn" onclick="window.open('https://www.linkedin.com/in/haocheng-kan-b59b3b92/');">
+						<img class="icon" src="image/twitter-square-brands-w.svg" alt="Twitter" onclick="window.open('https://twitter.com/haochengkan');">
+						<img class="icon" src="image/researchgate-brands-w.svg" alt="ResearchGate" onclick="window.open('https://www.researchgate.net/profile/Hao-Cheng-Kan');">
+					</div>
+					<div id="parent-g">
+						<img class="icon" src="image/blogger-brands.svg" alt="Blogger" onclick="window.open('https://kanchengzxdfgcv.blogspot.tw/');">
+						<img class="icon" src="image/github-square-brands.svg" alt="GitHub" onclick="window.open('https://github.com/kancheng');">
+						<img class="icon" src="image/facebook-square-brands.svg" alt="Facebook" onclick="window.open('https://www.facebook.com/haoye.kan.zxdfgcv');">
+						<img class="icon" src="image/instagram-square-brands.svg" alt="Instagram" onclick="window.open('https://www.instagram.com/haoyetanxin929/');">
+						<img class="icon" src="image/linkedin-brands.svg" alt="LinkedIn" onclick="window.open('https://www.linkedin.com/in/haocheng-kan-b59b3b92/');">
+						<img class="icon" src="image/twitter-square-brands.svg" alt="Twitter" onclick="window.open('https://twitter.com/haochengkan');">
+						<img class="icon" src="image/researchgate-brands.svg" alt="ResearchGate" onclick="window.open('https://www.researchgate.net/profile/Hao-Cheng-Kan');">
+					</div>
+				</div>
+			</section>
+
+			<article class="home-section home-about" aria-labelledby="about-heading">
 				<header>
-					<h2>About</h2>
+					<h2 id="about-heading" class="home-section__title">About</h2>
 				</header>
-				<div>
-					<hr>
-				</div>
+				<hr class="home-section__rule">
 				<p>
 					My academic and professional background spans information management, software engineering, artificial intelligence, and intelligent manufacturing. I earned bachelor’s and master’s degrees in Information Management, where I developed a foundation in software development, data analytics, economics, finance, and production management, with early research focused on educational data analysis. After completing my military service, I worked as a full-stack developer and gained practical experience in front-end and back-end development, databases, cloud deployment, and system maintenance. I later completed a second master’s degree at Peking University, specializing in federated learning, privacy-preserving computing, and medical image segmentation. In parallel, I have worked on industrial AI projects involving computer vision, defect inspection, image segmentation, and automated inference systems. This combination of research and engineering experience enables me to address complex problems from both theoretical and practical perspectives, with particular interests in trustworthy AI, computer vision, medical imaging, intelligent manufacturing, and real-world machine learning deployment.
 				</p>
 			</article>
-			<section class="cv-download-section" aria-labelledby="cv-download-heading">
+
+			<section class="home-section" aria-labelledby="explore-heading">
+				<h2 id="explore-heading" class="home-section__title">Explore</h2>
+				<hr class="home-section__rule">
+				<nav class="home-nav" aria-label="Site navigation">
+					<div class="home-nav__row">
+						<span class="home-nav__label">Resume</span>
+						<a class="home-nav__btn" href="en.html">English</a>
+						<a class="home-nav__btn" href="zh_cn.html">简体</a>
+						<a class="home-nav__btn" href="zh_tw.html">正體</a>
+						<a class="home-nav__btn" href="ja.html">日本語</a>
+						<a class="home-nav__btn" href="de.html">Deutsch</a>
+						<a class="home-nav__btn" href="fr.html">Français</a>
+					</div>
+					<div class="home-nav__row">
+						<span class="home-nav__label">Academic</span>
+						<a class="home-nav__btn home-nav__btn--accent" href="academic.html">Here</a>
+					</div>
+					<div class="home-nav__row">
+						<span class="home-nav__label">Presentations</span>
+						<a class="home-nav__btn home-nav__btn--accent" href="presentations.html">Here</a>
+					</div>
+					<div class="home-nav__row">
+						<span class="home-nav__label">Workspace</span>
+						<a class="home-nav__btn home-nav__btn--accent" href="https://kancheng.github.io/workspace-portal/">Portal</a>
+					</div>
+				</nav>
+			</section>
+
+			<section id="cv-download" class="home-section" aria-labelledby="cv-download-heading">
 				<header>
-					<h2 id="cv-download-heading">Download CV (PDF)</h2>
+					<h2 id="cv-download-heading" class="home-section__title">Download CV (PDF)</h2>
 				</header>
-				<div class="cv-download-grid">
-					<a href="spa_cv/ENCV_2026.pdf" class="cv-download-btn" download>
-						<span class="cv-download-icon" aria-hidden="true">
+				<hr class="home-section__rule">
+				<div class="home-cv-grid">
+					<a href="spa_cv/ENCV_2026.pdf" class="home-cv-btn" download>
+						<span class="home-cv-btn__icon" aria-hidden="true">
 							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
 						</span>
-						<span class="cv-download-label">English</span>
+						<span class="home-cv-btn__label">English</span>
 					</a>
-					<a href="spa_cv/ENCV_2026_simple.pdf" class="cv-download-btn" download>
-						<span class="cv-download-icon" aria-hidden="true">
+					<a href="spa_cv/ENCV_2026_simple.pdf" class="home-cv-btn" download>
+						<span class="home-cv-btn__icon" aria-hidden="true">
 							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
 						</span>
-						<span class="cv-download-label">English (Simple)</span>
+						<span class="home-cv-btn__label">English (Simple)</span>
 					</a>
-					<a href="spa_cv/CNZHTWCV_2026.pdf" class="cv-download-btn" download>
-						<span class="cv-download-icon" aria-hidden="true">
+					<a href="spa_cv/CNZHTWCV_2026.pdf" class="home-cv-btn" download>
+						<span class="home-cv-btn__icon" aria-hidden="true">
 							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
 						</span>
-						<span class="cv-download-label">正體中文</span>
+						<span class="home-cv-btn__label">正體中文</span>
 					</a>
-					<a href="spa_cv/CNZHCNCV_2026.pdf" class="cv-download-btn" download>
-						<span class="cv-download-icon" aria-hidden="true">
+					<a href="spa_cv/CNZHCNCV_2026.pdf" class="home-cv-btn" download>
+						<span class="home-cv-btn__icon" aria-hidden="true">
 							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
 						</span>
-						<span class="cv-download-label">簡體中文</span>
+						<span class="home-cv-btn__label">簡體中文</span>
 					</a>
-					<a href="spa_cv/JPCV_2026.pdf" class="cv-download-btn" download>
-						<span class="cv-download-icon" aria-hidden="true">
+					<a href="spa_cv/JPCV_2026.pdf" class="home-cv-btn" download>
+						<span class="home-cv-btn__icon" aria-hidden="true">
 							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
 						</span>
-						<span class="cv-download-label">日本語</span>
+						<span class="home-cv-btn__label">日本語</span>
 					</a>
-					<a href="spa_cv/FRCV_2026.pdf" class="cv-download-btn" download>
-						<span class="cv-download-icon" aria-hidden="true">
+					<a href="spa_cv/FRCV_2026.pdf" class="home-cv-btn" download>
+						<span class="home-cv-btn__icon" aria-hidden="true">
 							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
 						</span>
-						<span class="cv-download-label">Français</span>
+						<span class="home-cv-btn__label">Français</span>
 					</a>
-					<a href="spa_cv/DECV_2026.pdf" class="cv-download-btn" download>
-						<span class="cv-download-icon" aria-hidden="true">
+					<a href="spa_cv/DECV_2026.pdf" class="home-cv-btn" download>
+						<span class="home-cv-btn__icon" aria-hidden="true">
 							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
 						</span>
-						<span class="cv-download-label">Deutsch</span>
+						<span class="home-cv-btn__label">Deutsch</span>
 					</a>
 				</div>
 			</section>
 		</main>
-		<footer>
-			
-		</footer>
+
+		<footer class="home-footer"></footer>
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/main.js" charset="utf-8"></script>
 	</body>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/main.js" charset="utf-8"></script>
 </html>
